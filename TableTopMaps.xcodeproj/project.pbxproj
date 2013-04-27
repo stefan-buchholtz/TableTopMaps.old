@@ -19,6 +19,25 @@
 		6B70C7E317294AD700D2CF29 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B70C7BD17294AD700D2CF29 /* Cocoa.framework */; };
 		6B70C7EB17294AD700D2CF29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B70C7E917294AD700D2CF29 /* InfoPlist.strings */; };
 		6B70C7EE17294AD700D2CF29 /* TableTopMapsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C7ED17294AD700D2CF29 /* TableTopMapsTests.m */; };
+		6B70C7FE17295B1600D2CF29 /* TTMMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C7FD17295B1600D2CF29 /* TTMMap.m */; };
+		6B70C7FF17295B1600D2CF29 /* TTMMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C7FD17295B1600D2CF29 /* TTMMap.m */; };
+		6B70C802172991D400D2CF29 /* TTMMapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C801172991D400D2CF29 /* TTMMapObject.m */; };
+		6B70C803172991D400D2CF29 /* TTMMapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C801172991D400D2CF29 /* TTMMapObject.m */; };
+		6B70C80A1729942900D2CF29 /* TTMPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C8091729942900D2CF29 /* TTMPoint.m */; };
+		6B70C80B1729942900D2CF29 /* TTMPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C8091729942900D2CF29 /* TTMPoint.m */; };
+		6B70C81217299ACC00D2CF29 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B70C81117299ACC00D2CF29 /* CoreData.framework */; };
+		6B70C81417299ACC00D2CF29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B70C81317299ACC00D2CF29 /* Foundation.framework */; };
+		6B70C81717299ACC00D2CF29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C81617299ACC00D2CF29 /* main.m */; };
+		6B70C81E17299ACC00D2CF29 /* MapImporter.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6B70C81D17299ACC00D2CF29 /* MapImporter.1 */; };
+		6B70C8221729E03900D2CF29 /* TTMMap.h in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C7FC17295B1600D2CF29 /* TTMMap.h */; };
+		6B70C8231729E03900D2CF29 /* TTMMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C7FD17295B1600D2CF29 /* TTMMap.m */; };
+		6B70C8241729E03900D2CF29 /* TTMMapObject.h in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C800172991D400D2CF29 /* TTMMapObject.h */; };
+		6B70C8251729E03900D2CF29 /* TTMMapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C801172991D400D2CF29 /* TTMMapObject.m */; };
+		6B70C8261729E03900D2CF29 /* TTMPoint.h in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C8081729942900D2CF29 /* TTMPoint.h */; };
+		6B70C8271729E03900D2CF29 /* TTMPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C8091729942900D2CF29 /* TTMPoint.m */; };
+		6B70C8281729E03900D2CF29 /* TTMDocument.h in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C7CF17294AD700D2CF29 /* TTMDocument.h */; };
+		6B70C8291729E03900D2CF29 /* TTMDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C7D017294AD700D2CF29 /* TTMDocument.m */; };
+		6B70C82A1729E03900D2CF29 /* TTMDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B70C7D817294AD700D2CF29 /* TTMDocument.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +49,19 @@
 			remoteInfo = TableTopMaps;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6B70C80E17299ACC00D2CF29 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				6B70C81E17299ACC00D2CF29 /* MapImporter.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6B70C7BA17294AD700D2CF29 /* TableTopMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableTopMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +85,18 @@
 		6B70C7EA17294AD700D2CF29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6B70C7EC17294AD700D2CF29 /* TableTopMapsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableTopMapsTests.h; sourceTree = "<group>"; };
 		6B70C7ED17294AD700D2CF29 /* TableTopMapsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableTopMapsTests.m; sourceTree = "<group>"; };
+		6B70C7FC17295B1600D2CF29 /* TTMMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTMMap.h; path = DataModel/TTMMap.h; sourceTree = "<group>"; };
+		6B70C7FD17295B1600D2CF29 /* TTMMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTMMap.m; path = DataModel/TTMMap.m; sourceTree = "<group>"; };
+		6B70C800172991D400D2CF29 /* TTMMapObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTMMapObject.h; path = DataModel/TTMMapObject.h; sourceTree = "<group>"; };
+		6B70C801172991D400D2CF29 /* TTMMapObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTMMapObject.m; path = DataModel/TTMMapObject.m; sourceTree = "<group>"; };
+		6B70C8081729942900D2CF29 /* TTMPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTMPoint.h; path = DataModel/TTMPoint.h; sourceTree = "<group>"; };
+		6B70C8091729942900D2CF29 /* TTMPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTMPoint.m; path = DataModel/TTMPoint.m; sourceTree = "<group>"; };
+		6B70C81017299ACC00D2CF29 /* MapImporter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MapImporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B70C81117299ACC00D2CF29 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6B70C81317299ACC00D2CF29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6B70C81617299ACC00D2CF29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B70C81917299ACC00D2CF29 /* MapImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapImporter-Prefix.pch"; sourceTree = "<group>"; };
+		6B70C81D17299ACC00D2CF29 /* MapImporter.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = MapImporter.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +117,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6B70C80D17299ACC00D2CF29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B70C81217299ACC00D2CF29 /* CoreData.framework in Frameworks */,
+				6B70C81417299ACC00D2CF29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,6 +134,7 @@
 			children = (
 				6B70C7C317294AD700D2CF29 /* TableTopMaps */,
 				6B70C7E617294AD700D2CF29 /* TableTopMapsTests */,
+				6B70C81517299ACC00D2CF29 /* MapImporter */,
 				6B70C7BC17294AD700D2CF29 /* Frameworks */,
 				6B70C7BB17294AD700D2CF29 /* Products */,
 			);
@@ -91,6 +145,7 @@
 			children = (
 				6B70C7BA17294AD700D2CF29 /* TableTopMaps.app */,
 				6B70C7E017294AD700D2CF29 /* TableTopMapsTests.octest */,
+				6B70C81017299ACC00D2CF29 /* MapImporter */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +155,8 @@
 			children = (
 				6B70C7BD17294AD700D2CF29 /* Cocoa.framework */,
 				6B70C7E117294AD700D2CF29 /* SenTestingKit.framework */,
+				6B70C81117299ACC00D2CF29 /* CoreData.framework */,
+				6B70C81317299ACC00D2CF29 /* Foundation.framework */,
 				6B70C7BF17294AD700D2CF29 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -118,6 +175,7 @@
 		6B70C7C317294AD700D2CF29 /* TableTopMaps */ = {
 			isa = PBXGroup;
 			children = (
+				6B70C7F717294FCF00D2CF29 /* DataModelClasses */,
 				6B70C7CF17294AD700D2CF29 /* TTMDocument.h */,
 				6B70C7D017294AD700D2CF29 /* TTMDocument.m */,
 				6B70C7D217294AD700D2CF29 /* TTMDocument.xib */,
@@ -155,6 +213,37 @@
 			children = (
 				6B70C7E817294AD700D2CF29 /* TableTopMapsTests-Info.plist */,
 				6B70C7E917294AD700D2CF29 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6B70C7F717294FCF00D2CF29 /* DataModelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				6B70C7FC17295B1600D2CF29 /* TTMMap.h */,
+				6B70C7FD17295B1600D2CF29 /* TTMMap.m */,
+				6B70C800172991D400D2CF29 /* TTMMapObject.h */,
+				6B70C801172991D400D2CF29 /* TTMMapObject.m */,
+				6B70C8081729942900D2CF29 /* TTMPoint.h */,
+				6B70C8091729942900D2CF29 /* TTMPoint.m */,
+			);
+			name = DataModelClasses;
+			sourceTree = "<group>";
+		};
+		6B70C81517299ACC00D2CF29 /* MapImporter */ = {
+			isa = PBXGroup;
+			children = (
+				6B70C81617299ACC00D2CF29 /* main.m */,
+				6B70C81D17299ACC00D2CF29 /* MapImporter.1 */,
+				6B70C81817299ACC00D2CF29 /* Supporting Files */,
+			);
+			path = MapImporter;
+			sourceTree = "<group>";
+		};
+		6B70C81817299ACC00D2CF29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B70C81917299ACC00D2CF29 /* MapImporter-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -198,6 +287,23 @@
 			productReference = 6B70C7E017294AD700D2CF29 /* TableTopMapsTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		6B70C80F17299ACC00D2CF29 /* MapImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B70C81F17299ACC00D2CF29 /* Build configuration list for PBXNativeTarget "MapImporter" */;
+			buildPhases = (
+				6B70C80C17299ACC00D2CF29 /* Sources */,
+				6B70C80D17299ACC00D2CF29 /* Frameworks */,
+				6B70C80E17299ACC00D2CF29 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapImporter;
+			productName = MapImporter;
+			productReference = 6B70C81017299ACC00D2CF29 /* MapImporter */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,6 +328,7 @@
 			targets = (
 				6B70C7B917294AD700D2CF29 /* TableTopMaps */,
 				6B70C7DF17294AD700D2CF29 /* TableTopMapsTests */,
+				6B70C80F17299ACC00D2CF29 /* MapImporter */,
 			);
 		};
 /* End PBXProject section */
@@ -272,6 +379,9 @@
 				6B70C7CA17294AD700D2CF29 /* main.m in Sources */,
 				6B70C7D117294AD700D2CF29 /* TTMDocument.m in Sources */,
 				6B70C7DA17294AD700D2CF29 /* TTMDocument.xcdatamodeld in Sources */,
+				6B70C7FE17295B1600D2CF29 /* TTMMap.m in Sources */,
+				6B70C802172991D400D2CF29 /* TTMMapObject.m in Sources */,
+				6B70C80A1729942900D2CF29 /* TTMPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +390,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B70C7EE17294AD700D2CF29 /* TableTopMapsTests.m in Sources */,
+				6B70C7FF17295B1600D2CF29 /* TTMMap.m in Sources */,
+				6B70C803172991D400D2CF29 /* TTMMapObject.m in Sources */,
+				6B70C80B1729942900D2CF29 /* TTMPoint.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B70C80C17299ACC00D2CF29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B70C8221729E03900D2CF29 /* TTMMap.h in Sources */,
+				6B70C8231729E03900D2CF29 /* TTMMap.m in Sources */,
+				6B70C8241729E03900D2CF29 /* TTMMapObject.h in Sources */,
+				6B70C8251729E03900D2CF29 /* TTMMapObject.m in Sources */,
+				6B70C8261729E03900D2CF29 /* TTMPoint.h in Sources */,
+				6B70C8271729E03900D2CF29 /* TTMPoint.m in Sources */,
+				6B70C8281729E03900D2CF29 /* TTMDocument.h in Sources */,
+				6B70C8291729E03900D2CF29 /* TTMDocument.m in Sources */,
+				6B70C82A1729E03900D2CF29 /* TTMDocument.xcdatamodeld in Sources */,
+				6B70C81717299ACC00D2CF29 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +580,24 @@
 			};
 			name = Release;
 		};
+		6B70C82017299ACC00D2CF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MapImporter/MapImporter-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6B70C82117299ACC00D2CF29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MapImporter/MapImporter-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -475,6 +623,14 @@
 			buildConfigurations = (
 				6B70C7F517294AD700D2CF29 /* Debug */,
 				6B70C7F617294AD700D2CF29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6B70C81F17299ACC00D2CF29 /* Build configuration list for PBXNativeTarget "MapImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B70C82017299ACC00D2CF29 /* Debug */,
+				6B70C82117299ACC00D2CF29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
