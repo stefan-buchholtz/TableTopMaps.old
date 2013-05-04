@@ -1,25 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Connection" syncable="YES">
+        <attribute name="connectionType" attributeType="String" syncable="YES"/>
+        <relationship name="objects" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MapObject" inverseName="connection" inverseEntity="MapObject" syncable="YES"/>
+    </entity>
+    <entity name="Map" representedClassName="TTMMap" syncable="YES">
+        <attribute name="backgroundImageFileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="infoText" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="mapSet" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MapSet" inverseName="maps" inverseEntity="MapSet" syncable="YES"/>
+        <relationship name="objects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MapObject" inverseName="map" inverseEntity="MapObject" syncable="YES"/>
+        <fetchedProperty name="connections" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="Connection"/>
+        </fetchedProperty>
+    </entity>
     <entity name="MapObject" representedClassName="TTMMapObject" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="objectType" attributeType="String" syncable="YES"/>
+        <attribute name="solid" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="transparent" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
-        <relationship name="map" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="TTMMap" inverseName="objects" inverseEntity="TTMMap" syncable="YES"/>
+        <relationship name="connection" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Connection" inverseName="objects" inverseEntity="Connection" syncable="YES"/>
+        <relationship name="map" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Map" inverseName="objects" inverseEntity="Map" syncable="YES"/>
         <relationship name="points" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Point" inverseName="mapObject" inverseEntity="Point" syncable="YES"/>
+    </entity>
+    <entity name="MapSet" syncable="YES">
+        <relationship name="maps" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Map" inverseName="mapSet" inverseEntity="Map" syncable="YES"/>
     </entity>
     <entity name="Point" representedClassName="TTMPoint" syncable="YES">
         <attribute name="x" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="y" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <relationship name="mapObject" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="MapObject" inverseName="points" inverseEntity="MapObject" syncable="YES"/>
     </entity>
-    <entity name="TTMMap" representedClassName="TTMMap" syncable="YES">
-        <attribute name="backgroundImageFileName" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="infoText" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="objects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MapObject" inverseName="map" inverseEntity="MapObject" syncable="YES"/>
-    </entity>
     <elements>
-        <element name="MapObject" positionX="0" positionY="0" width="128" height="120"/>
+        <element name="MapObject" positionX="0" positionY="0" width="128" height="150"/>
         <element name="Point" positionX="0" positionY="0" width="128" height="90"/>
-        <element name="TTMMap" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="Map" positionX="0" positionY="0" width="128" height="134"/>
+        <element name="MapSet" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="Connection" positionX="160" positionY="192" width="128" height="75"/>
     </elements>
 </model>
